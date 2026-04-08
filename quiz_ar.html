@@ -214,7 +214,7 @@ function showResult(){
   r.routine.forEach(function(s){var d=document.createElement("div");d.className="routine-step";d.textContent=s;re.appendChild(d);});
   var te=document.getElementById("rTags"); te.innerHTML="";
   r.tags.forEach(function(t){var s=document.createElement("span");s.className="tag";s.textContent=t;te.appendChild(s);});
-  var le=document.getElementById("rLink"); le.href=LINKS[w]; le.textContent="ال"+"تسوقي منتجات"+r.type+" ←";
+  var le=document.getElementById("rLink"); le.href=LINKS[w]; le.textContent="تسوقي منتجات ال"+r.type+" ←";
   document.getElementById("resultSection").className="";
   window.scrollTo(0,0);
 }
