@@ -56,7 +56,7 @@ body { font-family: 'Almarai', sans-serif; background: #F8F6EE; min-height: 100v
   <div class="header">
     <span class="header-badge">VELLMOR — دليل العناية</span>
     <h1 class="header-title">مستشارتكِ الشخصية للعناية بالبشرة</h1>
-    <p class="header-sub">مش عارفة ما تحتاجه بشرتكِ؟ أجيبي على 5 أسئلة واحصلي على روتين مصمم خصيصاً لكِ</p>
+    <p class="header-sub">اكتشفي ما تحتاجه بشرتكِ؟ أجيبي على 5 أسئلة واحصلي على روتين مصمم خصيصاً لكِ</p>
     <div class="header-line"></div>
   </div>
 
@@ -95,16 +95,16 @@ body { font-family: 'Almarai', sans-serif; background: #F8F6EE; min-height: 100v
   </div>
 
   <div class="footer">
-    <a href="https://vellmor.store">vellmor.store</a> &nbsp;|&nbsp; © 2026 VÉLLMOR. جميع الحقوق محفوظة.
+    &nbsp;|&nbsp; © 2026 VÉLLMOR. جميع الحقوق محفوظة. <a href="https://vellmor.store">vellmor.store</a> 
   </div>
 
 </div>
 <script>
 var LINKS = {
-  dry:       "https://vellmor.store/collections/dry-skin",
-  oily:      "https://vellmor.store/collections/oily-skin",
-  combo:     "https://vellmor.store/collections/combination-skin",
-  sensitive: "https://vellmor.store/collections/sensitive-skin"
+  dry:       "https://ar.vellmor.store/collections/dry-skin-arabic",
+  oily:      "https://ar.vellmor.store/collections/oily-skin-arabic",
+  combo:     "https://ar.vellmor.store/collections/combination-skin-arabic",
+  sensitive: "https://ar.vellmor.store/collections/sensitive-skin-arabic"
 };
 
 var nums = ["١","٢","٣","٤","٥"];
@@ -214,7 +214,7 @@ function showResult(){
   r.routine.forEach(function(s){var d=document.createElement("div");d.className="routine-step";d.textContent=s;re.appendChild(d);});
   var te=document.getElementById("rTags"); te.innerHTML="";
   r.tags.forEach(function(t){var s=document.createElement("span");s.className="tag";s.textContent=t;te.appendChild(s);});
-  var le=document.getElementById("rLink"); le.href=LINKS[w]; le.textContent="تسوقي منتجات "+r.type+" ←";
+  var le=document.getElementById("rLink"); le.href=LINKS[w]; le.textContent="تسوقي منتجات ال"+r.type+" ←";
   document.getElementById("resultSection").className="";
   window.scrollTo(0,0);
 }
