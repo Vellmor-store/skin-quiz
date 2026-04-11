@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ماسك الشعر بالكولاجين من كارسيل — نعومة الحرير وترميم عميق — Vellmor</title>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --olive: #3D4A30;
+  --olive-light: #5C6B4A;
+  --olive-pale: #7A8F68;
+  --gold: #C8B89A;
+  --bg: #F8F6EE;
+  --white: #ffffff;
+  --text: #1a1a1a;
+  --text-soft: #555;
+  --text-muted: #888780;
+  --green-light: #EEF2E8;
+  --border: #e0ddd6;
+  --warm: #fff8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Almarai', sans-serif;
+  direction: rtl;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ===== URGENCY BAR ===== */
+.urgency-bar {
+  background: #c0392b;
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 50;
+}
+.urgency-bar span { color: #ffe082; }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--olive) 0%, #2a3520 100%);
+  padding: 60px 24px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; left: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(200,184,154,0.08);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -20px;
+  width: 250px; height: 250px;
+  border-radius: 50%;
+  background: rgba(200,184,154,0.06);
+}
+.hero-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 1px solid rgba(200,184,154,0.3);
+  border-radius: 30px;
+}
+.hero h1 {
+  font-size: clamp(22px, 5vw, 34px);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.4;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 span { color: var(--gold); }
+.hero p {
+  font-size: 14px;
+  color: rgba(200,184,154,0.85);
+  font-weight: 300;
+  max-width: 500px;
+  margin: 0 auto 12px;
+}
+.hero-social-proof {
+  font-size: 12px;
+  color: rgba(200,184,154,0.7);
+  margin-bottom: 24px;
+  display: block;
+}
+.hero-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--olive);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s;
+  position: relative;
+  z-index: 1;
+}
+.hero-cta:hover { background: #d4c4a6; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.hero-cta-sub {
+  display: block;
+  font-size: 11px;
+  color: rgba(200,184,154,0.6);
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== COUNTDOWN ===== */
+.countdown-wrap {
+  background: var(--white);
+  border-bottom: 2px solid var(--gold);
+  padding: 14px 20px;
+  text-align: center;
+}
+.countdown-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+  display: block;
+}
+.countdown-timer {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.cd-block {
+  background: var(--olive);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 6px 12px;
+  min-width: 44px;
+  text-align: center;
+}
+.cd-num {
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+}
+.cd-unit {
+  font-size: 9px;
+  font-weight: 300;
+  color: var(--gold);
+  display: block;
+  margin-top: 2px;
+}
+.cd-sep { font-size: 18px; font-weight: 800; color: var(--olive); }
+
+/* ===== INTRO STATS ===== */
+.stats {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--olive);
+  display: block;
+}
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* ===== PAIN BLOCK ===== */
+.pain-block {
+  background: var(--white);
+  border-right: 4px solid var(--olive);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 20px 20px 16px;
+  margin: 24px 0 0;
+  font-size: 14px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.9;
+}
+.pain-block strong { color: var(--olive); font-weight: 800; display: block; font-size: 15px; margin-bottom: 8px; }
+
+/* ===== WRAPPER ===== */
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== BEFORE/AFTER ===== */
+.before-after {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  margin: 24px 0;
+  overflow: hidden;
+}
+.before-after-title {
+  background: var(--olive);
+  color: var(--white);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ba-col {
+  padding: 20px 16px;
+  text-align: center;
+}
+.ba-col.before { border-left: 1px solid var(--border); }
+.ba-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+.ba-col.before .ba-label { color: #c0392b; }
+.ba-col.after .ba-label { color: var(--olive); }
+.ba-img {
+  width: 100%;
+  height: 130px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.ba-col.before .ba-img { background: #fff0ee; border: 2px dashed #f0c4a8; }
+.ba-col.after .ba-img { background: var(--green-light); border: 2px dashed rgba(61,74,48,0.2); }
+.ba-list { list-style: none; text-align: right; }
+.ba-list li {
+  font-size: 12px;
+  color: var(--text-soft);
+  font-weight: 300;
+  margin-bottom: 5px;
+  padding-right: 16px;
+  position: relative;
+}
+.ba-list li::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ba-col.before .ba-list li::before { content: '✗'; color: #c0392b; }
+.ba-col.after .ba-list li::before { content: '✓'; color: var(--olive); }
+
+/* ===== REASON CARD ===== */
+.reason {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  margin: 24px 0;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.reason:hover { box-shadow: 0 4px 24px rgba(61,74,48,0.08); }
+
+.reason-header {
+  padding: 28px 28px 20px;
+}
+.reason-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--olive-pale);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+.reason-title {
+  font-size: clamp(17px, 3.5vw, 21px);
+  font-weight: 800;
+  color: var(--olive);
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+.reason-desc {
+  font-size: 14px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.9;
+}
+.reason-desc strong { color: var(--olive); font-weight: 700; }
+
+/* ===== TAGS ===== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 28px 20px;
+}
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 30px;
+  background: var(--green-light);
+  color: var(--olive);
+  border: 1px solid rgba(61,74,48,0.15);
+}
+
+/* ===== ACCORDION ===== */
+.accordion { border-top: 1px solid var(--border); }
+.accordion-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px 28px;
+  font-family: 'Almarai', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--olive);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  transition: background 0.2s;
+}
+.accordion-btn:hover { background: var(--green-light); }
+.accordion-icon {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--green-light);
+  border: 1px solid rgba(61,74,48,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s, background 0.2s;
+  font-size: 14px;
+  color: var(--olive);
+}
+.accordion-btn.open .accordion-icon { transform: rotate(45deg); background: var(--olive); color: var(--white); }
+.accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.accordion-body.open { max-height: 900px; }
+.accordion-content {
+  padding: 20px 28px 24px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+.accordion-content p {
+  font-size: 14px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+.accordion-content ul { padding-right: 18px; margin-bottom: 14px; }
+.accordion-content ul li {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  padding-right: 4px;
+}
+.accordion-content ul li strong { color: var(--olive); font-weight: 700; }
+.accordion-summary {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--olive);
+  padding: 12px 16px;
+  background: var(--green-light);
+  border-right: 3px solid var(--olive);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+}
+
+/* ===== REVIEW ===== */
+.review {
+  background: var(--warm);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-top: 4px;
+}
+.review-stars { color: #f5a623; font-size: 13px; margin-bottom: 6px; }
+.review-text {
+  font-size: 13px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.review-author { font-size: 12px; font-weight: 700; color: var(--olive); }
+
+/* ===== SOCIAL PROOF STRIP ===== */
+.proof-strip {
+  background: var(--green-light);
+  border: 1px solid rgba(61,74,48,0.12);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.proof-avatars { display: flex; }
+.proof-avatar {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  background: var(--gold);
+  color: var(--olive);
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+}
+.proof-avatar:first-child { margin-left: 0; }
+.proof-text { flex: 1; min-width: 180px; }
+.proof-text strong { font-size: 14px; color: var(--olive); display: block; }
+.proof-text span { font-size: 12px; color: var(--olive-pale); font-weight: 300; }
+
+/* ===== MID CTA ===== */
+.mid-cta {
+  background: var(--olive);
+  border-radius: 20px;
+  padding: 24px 20px;
+  margin: 24px 0;
+  text-align: center;
+}
+.mid-cta p {
+  font-size: 13px;
+  color: rgba(200,184,154,0.8);
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+.mid-cta strong { color: var(--white); font-size: 15px; display: block; margin-bottom: 4px; }
+.mid-cta .btn-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--olive);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 14px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s;
+  width: 100%;
+  max-width: 360px;
+}
+.mid-cta .btn-cta:hover { background: #d4c4a6; }
+.mid-cta small { display: block; color: rgba(200,184,154,0.6); font-size: 11px; margin-top: 8px; }
+
+/* ===== WARN CARD ===== */
+.warn-card {
+  background: #fff5f0;
+  border: 1px solid #f0c4a8;
+  border-right: 4px solid #d97706;
+  border-radius: 12px;
+  padding: 20px;
+}
+.warn-card .warn-title { font-size: 14px; font-weight: 700; color: #92400e; margin-bottom: 10px; }
+.warn-card ul { padding-right: 18px; }
+.warn-card ul li {
+  font-size: 13px; color: #78350f; font-weight: 300; line-height: 1.8; margin-bottom: 6px;
+}
+
+/* ===== INGREDIENTS GRID ===== */
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 12px 0 16px;
+}
+.ing-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.ing-icon { font-size: 20px; margin-bottom: 6px; display: block; }
+.ing-name { font-size: 13px; font-weight: 700; color: var(--olive); display: block; margin-bottom: 4px; }
+.ing-desc { font-size: 12px; color: var(--text-soft); font-weight: 300; line-height: 1.7; }
+
+/* ===== STEPS LIST ===== */
+.steps-list { list-style: none; margin: 12px 0; }
+.step-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.step-num {
+  width: 30px; height: 30px;
+  background: var(--olive);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.step-text { font-size: 14px; color: var(--text-soft); font-weight: 300; line-height: 1.7; padding-top: 4px; }
+.step-text strong { color: var(--olive); font-weight: 700; }
+
+/* ===== SECTION TITLE ===== */
+.section-title { text-align: center; padding: 40px 24px 8px; }
+.section-title h2 { font-size: clamp(18px, 4vw, 26px); font-weight: 800; color: var(--olive); margin-bottom: 8px; }
+.section-title p { font-size: 13px; color: var(--text-muted); font-weight: 300; }
+.divider { width: 40px; height: 3px; background: var(--olive); margin: 12px auto; border-radius: 2px; }
+
+/* ===== OFFER BOX ===== */
+.offer-box {
+  background: var(--olive);
+  border-radius: 20px;
+  padding: 36px 28px;
+  margin: 24px 0;
+  color: var(--white);
+}
+.offer-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+.offer-h2 { font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 8px; line-height: 1.4; }
+.offer-subh { font-size: 13px; color: rgba(200,184,154,0.7); font-weight: 300; margin-bottom: 24px; }
+.offer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(200,184,154,0.2);
+}
+.offer-item:last-of-type { border-bottom: none; }
+.offer-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(200,184,154,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.offer-info { flex: 1; }
+.offer-name { font-size: 13.5px; font-weight: 700; color: var(--white); display: block; margin-bottom: 2px; }
+.offer-desc { font-size: 12px; color: rgba(200,184,154,0.8); font-weight: 300; }
+.offer-val { font-size: 12px; font-weight: 700; color: var(--gold); flex-shrink: 0; }
+.offer-total {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(200,184,154,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.offer-total-label { font-size: 13px; color: rgba(200,184,154,0.8); font-weight: 300; }
+.offer-total-price { font-size: 28px; font-weight: 800; color: var(--gold); }
+.offer-scarcity {
+  background: rgba(192,57,43,0.15);
+  border: 1px solid rgba(192,57,43,0.3);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #ffb8a8;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-wrap { text-align: center; padding: 28px 0 8px; }
+.btn-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--olive);
+  font-size: 16px;
+  font-weight: 800;
+  padding: 16px 48px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 20px rgba(61,74,48,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.btn-cta:hover { background: #d4c4a6; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(61,74,48,0.25); }
+.btn-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* ===== FAQ ===== */
+.faq { margin: 24px 0; }
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.faq-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 22px;
+  font-family: 'Almarai', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  transition: background 0.2s;
+}
+.faq-btn:hover { background: var(--green-light); }
+.faq-arrow { font-size: 18px; color: var(--olive); flex-shrink: 0; transition: transform 0.3s; }
+.faq-btn.open .faq-arrow { transform: rotate(180deg); }
+.faq-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faq-body.open { max-height: 300px; }
+.faq-answer {
+  padding: 16px 22px 20px;
+  font-size: 14px;
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.9;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== GUARANTEE ===== */
+.guarantee {
+  background: var(--green-light);
+  border: 1px solid rgba(61,74,48,0.15);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.g-item { display: flex; align-items: flex-start; gap: 10px; }
+.g-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.g-text { flex: 1; }
+.g-title { font-size: 13px; font-weight: 700; color: var(--olive); display: block; }
+.g-desc { font-size: 12px; color: var(--olive-pale); font-weight: 300; }
+
+/* ===== FOOTER ===== */
+.foot {
+  text-align: center;
+  padding: 32px 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+.foot-logo { font-size: 18px; font-weight: 800; color: var(--olive); letter-spacing: 2px; display: block; margin-bottom: 6px; }
+.foot p { font-size: 12px; color: var(--text-muted); font-weight: 300; }
+
+/* ===== STICKY CTA ===== */
+.sticky-bar {
+  position: fixed;
+  bottom: 0; right: 0; left: 0;
+  background: var(--olive);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 100;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.sticky-bar.visible { transform: translateY(0); }
+.sticky-text { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.3; }
+.sticky-text small { display: block; font-size: 11px; color: var(--gold); font-weight: 300; }
+.sticky-btn {
+  background: var(--gold);
+  color: var(--olive);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.sticky-btn:hover { background: #d4c4a6; }
+
+/* ===== TIP BOX ===== */
+.tip-box {
+  background: #fffbf0;
+  border: 1px solid #e8d89a;
+  border-right: 4px solid #c8a820;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 14px;
+  color: #6b5a1a;
+  font-weight: 300;
+  line-height: 1.9;
+}
+.tip-box strong { font-weight: 700; display: block; margin-bottom: 4px; color: #5a4a10; }
+
+@media (max-width: 480px) {
+  .guarantee { grid-template-columns: 1fr; }
+  .stats { gap: 20px; }
+  .reason-header, .accordion-content, .tags { padding-right: 20px; padding-left: 20px; }
+  .accordion-btn, .faq-btn { padding-right: 20px; padding-left: 20px; }
+  .before-after-grid { grid-template-columns: 1fr; }
+  .ba-col.before { border-left: none; border-bottom: 1px solid var(--border); }
+  .ingredients-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  🔥 تنبيه: المخزون المتبقي <span id="stockCount">19</span> قطعة فقط — الشحن لجميع الإمارات خلال 24-48 ساعة
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-badge">VELLMOR — دليل العناية الموثوق</span>
+  <h1>إذا جربتِ كل شيء وشعرك لا يزال جافاً وباهتاً…<br><span>هذا هو الفرق الذي ستشعرين به</span><br>من أول غسلة</h1>
+  <p>اقرئي هذا قبل أي قرار شراء — +4,000 عميلة في الإمارات وجدن الحل هنا</p>
+  <span class="hero-social-proof">⭐⭐⭐⭐⭐ &nbsp;•&nbsp; 4.8/5 من 2,000+ تقييم حقيقي &nbsp;•&nbsp; يُعاد طلبه باستمرار</span>
+  <a href="#order" class="hero-cta">🛒 امنحي شعرك أول جلسة إنقاذ حقيقية</a>
+  <span class="hero-cta-sub">💳 دفع عند الاستلام &nbsp;|&nbsp; 🚚 شحن مجاني &nbsp;|&nbsp; ↩️ ضمان 7 أيام</span>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="countdown-wrap">
+  <span class="countdown-label">⏰ العرض ينتهي خلال:</span>
+  <div class="countdown-timer">
+    <div class="cd-block"><span class="cd-num" id="cdH">03</span><span class="cd-unit">ساعة</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-block"><span class="cd-num" id="cdM">47</span><span class="cd-unit">دقيقة</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-block"><span class="cd-num" id="cdS">33</span><span class="cd-unit">ثانية</span></div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><span class="stat-num">+4,000</span><span class="stat-label">عميلة سعيدة</span></div>
+  <div class="stat"><span class="stat-num">6 مكونات</span><span class="stat-label">فعالة ومركّزة</span></div>
+  <div class="stat"><span class="stat-num">15 دقيقة</span><span class="stat-label">فرق حقيقي</span></div>
+  <div class="stat"><span class="stat-num">4.8 ⭐</span><span class="stat-label">من 2,000+ تقييم</span></div>
+</div>
+
+<!-- REASONS -->
+<div class="wrap" style="padding-top:32px;">
+
+  <!-- PAIN HOOK -->
+  <div class="pain-block">
+    <strong>هل شعرك يبدو جافاً وباهتاً بعد كل صبغة أو سشوار؟</strong>
+    الجفاف يعود بعد كل غسيل، والأطراف تتشعث، والتكسر لا يتوقف. المشكلة ليست شعرك — المشكلة في المنتج الخاطئ الذي يُرطّب السطح فقط ويترك الخيوط التالفة كما هي من الداخل.
+  </div>
+
+  <!-- BEFORE / AFTER -->
+  <div class="before-after">
+    <div class="before-after-title">✨ التحول الحقيقي — قبل وبعد ماسك كارسيل بالكولاجين</div>
+    <div class="before-after-grid">
+      <div class="ba-col before">
+        <span class="ba-label">❌ قبل</span>
+        <div class="ba-img">😔</div>
+        <ul class="ba-list">
+          <li>جفاف وخشونة مستمرة</li>
+          <li>تكسر عند التمشيط</li>
+          <li>أطراف متشعثة دائماً</li>
+          <li>شعر باهت بلا بريق</li>
+          <li>صبغة تبهت سريعاً</li>
+        </ul>
+      </div>
+      <div class="ba-col after">
+        <span class="ba-label">✅ بعد أسبوعين</span>
+        <div class="ba-img">✨</div>
+        <ul class="ba-list">
+          <li>نعومة حريرية تدوم أياماً</li>
+          <li>تمشيط سلس بلا تكسر</li>
+          <li>أطراف ممتلئة ومنتظمة</li>
+          <li>بريق طبيعي يعكس الضوء</li>
+          <li>لون ثابت وأكثر إشراقاً</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 1: الآلية -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الأول • الآلية</span>
+      <div class="reason-title">الكولاجين المُحلَّل يُعيد بناء خيط الشعر من الداخل — لا يُغطي المشكلة، يحلّها</div>
+      <p class="reason-desc">
+        شعرك التالف يعاني من فراغات حقيقية داخل خيوطه — تخيلي طريقاً مكسراً تحاولين إصلاحه بطبقة دهان. معظم البلسمات تضع طبقة فوق السطح تُعطيكِ ملمساً ناعماً لساعات ثم تختفي مع أول غسيل.
+        ماسك كارسيل يعتمد على <strong>الكولاجين المُحلَّل بجزيئات صغيرة</strong> تخترق الحراشف وتدخل داخل الخيط نفسه لتملأ الفراغات الفعلية وتُعيد البنية المتضررة.
+        <strong>النتيجة؟ ترميم حقيقي يبقى حتى بعد الغسيل — لا وهم نعومة مؤقت.</strong>
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">🔬 ترميم داخلي</span>
+      <span class="tag">💧 كولاجين مُحلَّل</span>
+      <span class="tag">✨ نتيجة دائمة</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>كيف يعمل الكولاجين المُحلَّل على إعادة بناء الخيوط التالفة؟</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p>الكولاجين المُحلَّل ليس مكوّناً دعائياً — هو آلية العمل الحقيقية. الجزيئات الصغيرة تتسلل داخل الحراشف المفتوحة وتستقر في المناطق المجوفة:</p>
+          <ul>
+            <li><strong>يملأ الفراغات البنيوية:</strong> الشعر المصبوغ والمعالَج بالحرارة يخسر بروتيناته الداخلية — الكولاجين يعوّض هذا الخسران مباشرة</li>
+            <li><strong>يُغلق الحراشف المفتوحة:</strong> الشعر التالف حراشفه مرفوعة مما يسبب الخشونة والتجعد — الكولاجين يُساعد على إعادة إغلاقها</li>
+            <li><strong>يُعيد المرونة الطبيعية:</strong> الشعر المُعالَج بالكولاجين يصبح أكثر مقاومة للتكسر وأقل هشاشة</li>
+            <li><strong>يُحسّن انعكاس الضوء:</strong> البنية المملوءة تعكس الضوء بانتظام — هذا هو البريق الحقيقي لا الاصطناعي</li>
+          </ul>
+          <div class="accordion-summary">هذا ليس مرطباً سطحياً — إنه علاج هيكلي يبدأ من داخل الخيط.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"شعري كان يتكسر من النظر إليه بعد سبع جلسات صبغة. جربت الماسك أسبوعين فقط والفرق واضح — حتى زوجي لاحظه وهو ما يلاحظ شيئاً عادةً."</p>
+            <span class="review-author">— رنا ع. من دبي، 34 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 2: السرعة -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الثاني • السرعة</span>
+      <div class="reason-title">من أول استخدام تشعرين بالفرق — والترميم الكامل خلال أسبوعين</div>
+      <p class="reason-desc">
+        شعرك يحتاج ترميماً تراكمياً منتظماً — وليس جرعة ترطيب واحدة كل أسبوع تختفي بعد يومين. معظم الأقنعة تعطيكِ لمعة جيدة يوم الغسيل ثم يعود الشعر لجفافه كما كان.
+        ماسك كارسيل يعمل بتركيبة مُركَّزة تتراكم داخل الخيط مع كل استخدام — مثل بناء طبقة فوق طبقة.
+        <strong>نعومة ملموسة من أول لمسة + ترميم مستقر بحلول الأسبوع الثاني أو الثالث.</strong>
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">⚡ فوري</span>
+      <span class="tag">📅 أسبوعان</span>
+      <span class="tag">🌸 نتائج تراكمية</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>الجدول الزمني للتخلص من الجفاف — ماذا تتوقعين أسبوعاً بأسبوع؟</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <ul>
+            <li><strong>الاستخدام الأول:</strong> نعومة ملموسة فورية — الشعر أسهل في التمشيط وأقل تجعداً بعد التجفيف</li>
+            <li><strong>الأسبوع الأول:</strong> تقلص واضح في الأطراف المتشعثة — بريق يبدأ يظهر ومقاومة أقل عند التمشيط</li>
+            <li><strong>الأسبوع الثاني:</strong> الجفاف يتراجع بشكل ملحوظ — خيوط أكثر مرونة وتكسر أقل مع السشوار</li>
+            <li><strong>بعد أسبوعين:</strong> شعر يبدو أكثر صحة وكثافة بصرياً — الفرق يبقى حتى بين الغسلات</li>
+          </ul>
+          <div class="accordion-summary">أسبوعان فقط تفصلانكِ عن شعر يبدو كأنكِ خرجتِ للتو من الصالون — وهذه المرة يبقى هكذا.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"من أول استخدام شعرت بفرق في التمشيط، وبعد الأسبوع الثاني شعري كأنه ماسك جديد تماماً — الأطراف سليمة والملمس حريري فعلاً."</p>
+            <span class="review-author">— دلال م. من أبوظبي، 29 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL PROOF STRIP -->
+  <div class="proof-strip">
+    <div class="proof-avatars">
+      <div class="proof-avatar">ر</div>
+      <div class="proof-avatar">ن</div>
+      <div class="proof-avatar">د</div>
+      <div class="proof-avatar">س</div>
+      <div class="proof-avatar">م</div>
+    </div>
+    <div class="proof-text">
+      <strong>+4,000 عميلة اخترن كارسيل من Vellmor</strong>
+      <span>انضمت 38 عميلة جديدة هذا الأسبوع — ووجدن الفرق بأنفسهن</span>
+    </div>
+    <span style="font-size:20px;">⭐ 4.8</span>
+  </div>
+
+  <!-- REASON 3: السهولة -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الثالث • البساطة</span>
+      <div class="reason-title">15 دقيقة فقط — ضعيه، اتركيه، اشطفيه وانطلقي بشعر مختلف</div>
+      <p class="reason-desc">
+        العناية الحقيقية بالشعر لا يجب أن تكون مشروع يوم كامل. معظم أقنعة الترميم الجدية تتطلب ساعة أو أكثر أو تحتاج معدات خاصة وحرارة وخطوات معقدة.
+        ماسك كارسيل فعّال من 10 إلى 20 دقيقة في درجة حرارة الغرفة بدون أي معدات إضافية.
+        <strong>علاج عميق يندمج بسهولة مع روتينك الأسبوعي — صفر جهد، نتائج قصوى.</strong>
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">⏱️ 15 دقيقة</span>
+      <span class="tag">✅ بلا معدات</span>
+      <span class="tag">🏠 في بيتك</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>5 خطوات بسيطة — روتين الصالون في بيتك</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <ul class="steps-list">
+            <li class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-text"><strong>اغسلي شعرك بالشامبو</strong> وجففيه بالمنشفة حتى لا يقطر</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-text"><strong>ضعي الماسك من المنتصف للأطراف</strong> مع تجنب فروة الرأس تماماً</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-text"><strong>ضعي غطاء شعر</strong> واتركيه من 10 إلى 20 دقيقة — يمكنك التصفح أو مشاهدة سيريز</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-text"><strong>اشطفي بالماء البارد</strong> — الماء البارد يُغلق الحراشف ويُضاعف البريق</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">5</div>
+              <div class="step-text"><strong>استخدميه مرة إلى مرتين أسبوعياً</strong> للحفاظ على النتائج التراكمية</div>
+            </li>
+          </ul>
+          <div class="tip-box">
+            <strong>💡 نصيحتنا للشعر المتضرر جداً:</strong>
+            ضعي الماسك قبل الشامبو واتركيه 30 دقيقة كعلاج مكثف — الشعر سيمتصه بشكل أعمق وستحصلين على نتيجة تقارب جلسة صالون كاملة.
+          </div>
+          <div class="accordion-summary">الحل الوحيد الذي يعمل بينما أنتِ تعيشين يومك الطبيعي — صفر تعقيد، أقصى نتيجة.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"أفضل شيء إني ما اضطررت أغير حياتي عشانه. أضعه وأشاهد سيريز وأشطفه — وين الصعوبة؟ والنتيجة مذهلة."</p>
+            <span class="review-author">— منيرة ص. من الشارقة، 26 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 4: الراحة مقابل البدائل -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الرابع • الراحة</span>
+      <div class="reason-title">على عكس الأقنعة الثقيلة، كارسيل يُشعرك بحرير حقيقي — لا بشعر مثقل أو دهني</div>
+      <p class="reason-desc">
+        الاستخدام المنتظم أسبوعياً يعني أن الماسك يجب أن يُرطّب دون أن يُثقّل أو يتراكم. معظم الأقنعة الثقيلة تعطيكِ ملمساً جيداً يوم الغسيل ثم يبدأ الشعر بالثقل والدهنية في اليوم الثاني.
+        ماسك كارسيل خالٍ من <strong>الكبريتات والبارابين</strong> — يُرطّب ويُرمّم دون أن يترك أي تراكم حتى مع الاستخدام المتكرر.
+        <strong>شعر ناعم حريري يبقى هكذا لأيام — لا ثقيل، لا دهني، لا متراكم.</strong>
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">🌬️ خفيف</span>
+      <span class="tag">✨ حريري</span>
+      <span class="tag">🚫 بدون كبريتات</span>
+      <span class="tag">♻️ لا تراكم</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>لماذا الأقنعة الثقيلة فشلت — وكيف نجح كارسيل</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p><strong>الأقنعة الثقيلة التقليدية:</strong></p>
+          <ul>
+            <li>تُثقّل الشعر وتجعله يبدو مسطحاً وبلا حياة بعد 48 ساعة</li>
+            <li>تتراكم مع الاستخدام المتكرر وتُلبّد الشعر</li>
+            <li>تُشعل الفروة بالدهنية وتُعجّل في التساقط</li>
+            <li>غالية وتحتاج للذهاب للصالون لتطبيقها بشكل صحيح</li>
+          </ul>
+          <p style="margin-top:12px;"><strong>ماسك كارسيل بالكولاجين:</strong></p>
+          <ul>
+            <li><strong>ترطيب خفيف يدوم أياماً:</strong> المكونات تعمل من الداخل لا تبني طبقة فوق السطح</li>
+            <li><strong>لا تراكم حتى مرتين أسبوعياً:</strong> التركيبة الخالية من الكبريتات تُرطّب دون تلبيد</li>
+            <li><strong>الفروة تبقى نظيفة:</strong> التطبيق من المنتصف للأطراف يحمي الفروة الطبيعية</li>
+            <li><strong>تجربة الصالون في بيتك:</strong> نفس النتيجة بدون جدول مواعيد أو تكلفة</li>
+          </ul>
+          <div class="accordion-summary">الترطيب الحقيقي لا يعني الثقل — مع التركيبة الصحيحة تحصلين على الاثنين معاً.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"جربت 4 أقنعة قبله كلها كانت تُثقّل شعري. كارسيل أول واحد شعرت معه إن شعري ناعم ومفرود وخفيف بنفس الوقت."</p>
+            <span class="review-author">— هيا ر. من أبوظبي، 31 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MID CTA -->
+  <div class="mid-cta">
+    <strong>هل أنتِ مستعدة للتحول؟</strong>
+    <p>+4,000 عميلة في الإمارات وجدن الفرق — الآن دورك</p>
+    <a href="#order" class="btn-cta">
+      ✨ امنحي شعرك جلسة الإنقاذ الحقيقية
+    </a>
+    <small>💳 دفع عند الاستلام &nbsp;|&nbsp; 🚚 شحن مجاني &nbsp;|&nbsp; ↩️ ضمان 7 أيام</small>
+  </div>
+
+  <!-- REASON 5: الفائدة المخفية -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الخامس • الفائدة المخفية</span>
+      <div class="reason-title">مفاجأة لم تتوقعيها — الصبغة تبقى أكثر إشراقاً لأسابيع إضافية</div>
+      <p class="reason-desc">
+        الشعر المصبوغ يُسرّب لونه مع كل غسلة طالما ظل تالفاً وحراشفه مفتوحة. معظم النساء يعتقدن أن سرعة بهوت الصبغة تعتمد فقط على جودة الصبغة — لكن السبب الحقيقي هو تلف الخيط نفسه.
+        عندما يُعيد الكولاجين إغلاق الحراشف ويملأ الفراغات الداخلية، <strong>يصبح اللون محبوساً داخل الخيط لا يتسرب بسهولة</strong> — وهذا يعني توفيراً حقيقياً في تكلفة الصالون.
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">🎨 تثبيت اللون</span>
+      <span class="tag">✨ صبغة أطول</span>
+      <span class="tag">💰 توفير حقيقي</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>الفوائد المضاعفة — من ترميم الشعر إلى توفير تكلفة الصالون</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p>إصلاح الشعر من الداخل يُصلح أشياء لم تكوني تعرفين أنها مرتبطة ببعض:</p>
+          <ul>
+            <li><strong>الصبغة تبقى مشرقة أطول:</strong> حراشف مغلقة = لون محبوس داخل الخيط لا يتسرب مع كل غسلة</li>
+            <li><strong>التمشيط الصباحي أسرع:</strong> الشعر المُرمَّم لا يتشابك بنفس الطريقة — توفرين 5 دقائق يومياً</li>
+            <li><strong>السشوار يأخذ وقتاً أقل:</strong> الشعر الصحي يجف أسرع لأن بنيته مكتملة</li>
+            <li><strong>الانتفاش يتقلص:</strong> الحراشف المنتظمة لا تلتقط رطوبة الجو كما كانت</li>
+            <li><strong>زيارات الصالون تتباعد:</strong> شعر يبدو جيداً أطول = ضغط أقل للذهاب للقص</li>
+          </ul>
+          <div class="accordion-summary">جئتِ لتُرمّمي الشعر الجاف، ستخرجين بصبغة أجمل وروتين صباحي أسرع وفاتورة صالون أصغر.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"المفاجأة الكبيرة إن صبغتي بقيت مشرقة ثلاثة أسابيع زيادة عن العادة. خبيرة الصالون سألتني عزيتِ إيش!"</p>
+            <span class="review-author">— نور خ. من دبي، 27 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 6: المكونات -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب السادس • المكونات</span>
+      <div class="reason-title">6 مكونات فعالة في عبوة واحدة — ما تجدينه عادةً في 6 منتجات منفصلة</div>
+      <p class="reason-desc">
+        الشعر التالف يحتاج أكثر من مكوّن واحد لمعالجة أوجه ضرر متعددة في نفس الوقت. معظم الأقنعة تتمحور حول مكوّن واحد مُعلَن — كولاجين فقط، أو أرغان فقط.
+        ماسك كارسيل يجمع <strong>6 مكونات فعالة مُركَّزة</strong> كل واحد منها يعالج جانباً مختلفاً — في جلسة واحدة واحدة.
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">💧 6 مكونات</span>
+      <span class="tag">🌿 علاج شامل</span>
+      <span class="tag">✅ منتج واحد يكفي</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>ماذا يفعل كل مكوّن — الدور الذي لا يقدر عليه غيره</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <div class="ingredients-grid">
+            <div class="ing-item">
+              <span class="ing-icon">🧬</span>
+              <span class="ing-name">كولاجين مُحلَّل</span>
+              <span class="ing-desc">يدخل الخيط ويملأ الفراغات البنيوية — العلاج الهيكلي الحقيقي</span>
+            </div>
+            <div class="ing-item">
+              <span class="ing-icon">🌿</span>
+              <span class="ing-name">زيت الأرغان</span>
+              <span class="ing-desc">يُرطّب ويُضيف بريقاً ويحمي من الحرارة المباشرة</span>
+            </div>
+            <div class="ing-item">
+              <span class="ing-icon">🥑</span>
+              <span class="ing-name">زيت الأفوكادو</span>
+              <span class="ing-desc">أحماض دهنية أساسية تُقوّي من الجذر للطرف</span>
+            </div>
+            <div class="ing-item">
+              <span class="ing-icon">🌰</span>
+              <span class="ing-name">زبدة الشيا</span>
+              <span class="ing-desc">تُغذّي الأطراف الجافة وتُقلّل التشعث المزمن</span>
+            </div>
+            <div class="ing-item">
+              <span class="ing-icon">🌱</span>
+              <span class="ing-name">مستخلص الماكا</span>
+              <span class="ing-desc">يُنشّط الخيوط الخاملة ويمنحها طاقة من الداخل</span>
+            </div>
+            <div class="ing-item">
+              <span class="ing-icon">🌾</span>
+              <span class="ing-name">بروتين القمح المُحلَّل</span>
+              <span class="ing-desc">يُعزّز المرونة ويُقلّل التكسر عند التمشيط</span>
+            </div>
+          </div>
+          <div class="accordion-summary">لسنا مجرد ماسك شعر — نحن بروتوكول ترميم كامل في عبوة واحدة.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"أكثر شيء عجبني إن أطراف شعري تحسنت وأنا ما ركزت عليها أصلاً. الماسك اهتم بكل شيء بدون ما أطلب."</p>
+            <span class="review-author">— ليلى ب. من العين، 33 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 7: مناسب لجميع أنواع الشعر -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب السابع • الشمولية</span>
+      <div class="reason-title">مناسب لكل أنواع الشعر — خاصةً المصبوغ والمُبيَّض والمُعالَج كيميائياً</div>
+      <p class="reason-desc">
+        الشعر المُعالَج كيميائياً يحتاج مكونات آمنة لا تُسرّع تدهوره أو تمسح الصبغة. معظم الأقنعة المُكثَّفة تحتوي على مواد تُضعف الخيوط المُعالَجة أو تُسرّع خسارة اللون.
+        ماسك كارسيل <strong>خالٍ من الكبريتات والبارابين</strong> — صُمّم خصيصاً ليكون الحل الأمثل لكل من:
+      </p>
+      <ul style="list-style:none; padding-right:0; margin-top:12px;">
+        <li style="font-size:14px; color:var(--text-soft); font-weight:300; padding:5px 0; border-bottom:1px solid var(--border);">✓ &nbsp; الشعر المصبوغ أو المُبيَّض الذي يعاني من جفاف مزمن</li>
+        <li style="font-size:14px; color:var(--text-soft); font-weight:300; padding:5px 0; border-bottom:1px solid var(--border);">✓ &nbsp; الشعر المتضرر من السشوار والمكواة والحرارة المستمرة</li>
+        <li style="font-size:14px; color:var(--text-soft); font-weight:300; padding:5px 0; border-bottom:1px solid var(--border);">✓ &nbsp; الشعر الخشن والمجعد الذي يصعب إدارته</li>
+        <li style="font-size:14px; color:var(--text-soft); font-weight:300; padding:5px 0;">✓ &nbsp; كل أنواع الشعر — خاصةً الجاف والهش والمتكسر</li>
+      </ul>
+    </div>
+    <div class="tags">
+      <span class="tag">💆 كل أنواع الشعر</span>
+      <span class="tag">🎨 آمن للصبغة</span>
+      <span class="tag">🚫 بدون بارابين</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>لماذا آمن للشعر المصبوغ — وكيف يُطيل عمر الصبغة؟</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p>الشعر المصبوغ مختلف في بنيته — يحتاج مكونات تُرمّم دون أن تتدخل مع جزيئات اللون:</p>
+          <ul>
+            <li><strong>بدون كبريتات:</strong> الكبريتات تفتح الحراشف وتُسرّع خسارة اللون — كارسيل يتجنبها تماماً</li>
+            <li><strong>الكولاجين يُغلق الحراشف:</strong> حراشف مغلقة = لون أكثر ثباتاً وإشراقاً لأسابيع إضافية</li>
+            <li><strong>pH متوازن:</strong> التركيبة لا تُكسر الروابط الكيميائية للصبغة</li>
+            <li><strong>يثبّت اللون ويُعمّقه:</strong> مستخدمات كثيرات لاحظن أن الصبغة بدت أكثر تشبعاً بعد الاستخدام المنتظم</li>
+          </ul>
+          <div class="accordion-summary">ما كان يُقلّص عمر صبغتك لأسابيع، كارسيل يُعيده ويُضيف عليه — هذا فرق حقيقي في فاتورة الصالون.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"جربته بعد كل جلسة صبغة الآن. اللون يثبت أكثر بكثير وما عدت أحتاج أروح الصالون بنفس التكرار — وفّر علي فعلاً."</p>
+            <span class="review-author">— فاطمة ع. من الفجيرة، 38 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 8: التحذير / الإلحاح -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب الثامن • التحذير</span>
+      <div class="reason-title">شعرك التالف يزداد ضعفاً كل أسبوع تتجاهلينه — إليك ما يحدث فعلاً</div>
+      <p class="reason-desc">
+        الجفاف والتلف البنيوي في الشعر ليسا حالة ثابتة — يتفاقمان مع كل جلسة سشوار ومع كل صبغة وحتى مع الاحتكاك اليومي. كل أسبوع يمر بدون ترميم تزيد الفراغات الداخلية، والأطراف تتشعث أكثر، والتكسر يرتفع.
+        ما يبدأ كجفاف بسيط يتحول خلال أشهر إلى <strong>خيوط هشة تنكسر في المنتصف</strong> وشعر يبدو أقل كثافة — قد يحتاج لقطع كميات كبيرة أو جلسات كيراتين مكلفة.
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">⚠️ تحذير</span>
+      <span class="tag">📈 تفاقم تدريجي</span>
+      <span class="tag">⏰ لا تنتظري</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>سلسلة الضرر المتصاعد — ماذا يحدث حين تتجاهلين العلاج؟</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <ul>
+            <li><strong>الأسابيع الأولى:</strong> جفاف ملحوظ بعد التجفيف، تجعد خفيف، أطراف تبدأ بالتعب — يسهل تجاهله</li>
+            <li><strong>بعد شهر:</strong> تكسر عند التمشيط، أطراف متشعثة بوضوح، الشعر يفقد بريقه الطبيعي تماماً</li>
+            <li><strong>بعد 3 أشهر:</strong> خيوط هشة تنكسر في المنتصف، تساقط زائد، الشعر يبدو أقل كثافة وأقصر</li>
+            <li><strong>ضرر مزمن:</strong> تلف هيكلي عميق يحتاج لقطع كميات كبيرة أو جلسات كيراتين (600-1,500 درهم للجلسة)</li>
+          </ul>
+          <div class="accordion-summary">كل أسبوع تنتظرين هو أسبوع تسمحين فيه للضرر بالعمق — العلاج المبكر يوفر عليكِ سنوات من الجهد والمال.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"تجاهلت شعري سنة كاملة وبدأت أشوف فرقاً في الكثافة. لما بدأت بالماسك توقف الانكسار خلال أسبوعين. كم تمنيت بدأت قبل."</p>
+            <span class="review-author">— سهيلة ن. من رأس الخيمة، 35 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 9: الدليل الاجتماعي -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب التاسع • الدليل الاجتماعي</span>
+      <div class="reason-title">4.8 نجوم من أكثر من 2,000 مستخدمة — نتائج حقيقية من نساء مررن بما مررتِ به</div>
+      <p class="reason-desc">
+        قرارات العناية بالشعر تحتاج دليلاً حقيقياً من نساء واجهن نفس مشكلتك — لا صور مُعدَّلة أو وعود من ماركة. أكثر من 4,000 عميلة انضممن لعائلة كارسيل وشاركن تجاربهن بتقييم وسطي 4.8 من 5.
+        غالبية التقييمات تأتي من <strong>شعر مصبوغ ومتضرر بالحرارة</strong> تماماً كشعرك — لستِ أول من يجرب، الطريق ممهّد.
+      </p>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>ماذا قالت المستخدمات — تقييمات من نساء يشبهن وضعك</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <div class="review" style="margin-bottom:10px;">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"شفت الأرقام والتقييمات وقلت جربيه أسوأ شيء تخسرين ثمنه. والله ما ندمت — شعري صار مرجع لكل صديقاتي."</p>
+            <span class="review-author">— عبير م. من دبي، 30 سنة ✓ مشتري موثق</span>
+          </div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"2,000 تقييم وأنا متخوفة؟ جربت وصرت واحدة من التقييمات. منتج يستاهل كل كلمة كُتبت عنه."</p>
+            <span class="review-author">— تهاني س. من الشارقة، 28 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASON 10: الضمان -->
+  <div class="reason">
+    <div class="reason-header">
+      <span class="reason-num">السبب العاشر • الضمان</span>
+      <div class="reason-title">ضمان استرداد المال لمدة 7 أيام — جربيه بدون أي مخاطرة</div>
+      <p class="reason-desc">
+        الشراء أونلاين يحمل شكاً طبيعياً — وهذا حقك تماماً. معظم المتاجر تعطيكِ شروط استرجاع معقدة تجعل العملية شبه مستحيلة. في Vellmor نقدم لكِ 7 أيام كاملة لتجربة كارسيل في روتينك الفعلي — وإذا لم تلاحظي فرقاً نُعيد لكِ المبلغ كاملاً بدون أسئلة.
+        <strong>الخطر الوحيد هو أن تستمري في استخدام منتجات لا تعمل.</strong>
+      </p>
+    </div>
+    <div class="tags">
+      <span class="tag">🛡️ 7 أيام ضمان</span>
+      <span class="tag">💰 استرداد كامل</span>
+      <span class="tag">✅ بدون أسئلة</span>
+    </div>
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        <span>لماذا نُقدّم ضمان 7 أيام — الثقة بالنتيجة</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p>الضمان ليس تكتيكاً تسويقياً — هو دليل على ثقتنا الكاملة بما سيحدث لشعرك:</p>
+          <ul>
+            <li><strong>7 أيام = 2 استخدامات على الأقل:</strong> وقت كافٍ لتُلاحظي الفرق الفوري في النعومة والتمشيط</li>
+            <li><strong>استرداد كامل بدون تعقيد:</strong> لا إجراءات، لا أسئلة، لا رسوم إعادة خفية</li>
+            <li><strong>خدمة العملاء Vellmor:</strong> فريق متاح لمساعدتكِ في أي وقت خلال فترة الضمان</li>
+          </ul>
+          <div class="accordion-summary">تحصلين على فرصة حقيقية لتجربة الترميم الفعلي — الخسارة الوحيدة هي التأخر عن البدء.</div>
+          <div class="review">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"الضمان أقنعني أجرب. في النهاية ما احتجته — النتيجة كانت واضحة من أول استخدام."</p>
+            <span class="review-author">— مروة ح. من أم القيوين، 32 سنة ✓ مشتري موثق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WARN CARD -->
+  <div class="warn-card" style="margin:24px 0;">
+    <p class="warn-title">⚠️ تنبيهات الاستخدام</p>
+    <ul>
+      <li>للاستخدام الخارجي فقط — تجنبي ملامسة العيون</li>
+      <li>للاستخدام على الشعر فقط دون فروة الرأس لمن تعاني من مشاكل التهابية</li>
+      <li>في حال حدوث تهيج أوقفي الاستخدام وتواصلي مع الطبيب</li>
+    </ul>
+  </div>
+
+  <!-- GUARANTEE GRID -->
+  <div class="guarantee" style="margin:0 0 24px;">
+    <div class="g-item">
+      <span class="g-icon">↩️</span>
+      <div class="g-text">
+        <span class="g-title">ضمان 7 أيام</span>
+        <span class="g-desc">في حال التلف أو عدم المطابقة</span>
+      </div>
+    </div>
+    <div class="g-item">
+      <span class="g-icon">💰</span>
+      <div class="g-text">
+        <span class="g-title">استرداد كامل</span>
+        <span class="g-desc">إذا وصل المنتج تالفاً</span>
+      </div>
+    </div>
+    <div class="g-item">
+      <span class="g-icon">🚚</span>
+      <div class="g-text">
+        <span class="g-title">توصيل مجاني</span>
+        <span class="g-desc">24-48 ساعة لجميع الإمارات</span>
+      </div>
+    </div>
+    <div class="g-item">
+      <span class="g-icon">💳</span>
+      <div class="g-text">
+        <span class="g-title">دفع عند الاستلام</span>
+        <span class="g-desc">متاح لجميع الطلبات</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFER BOX -->
+  <div class="offer-box" id="order">
+    <span class="offer-title">عرض Vellmor الحصري — محدود الكمية</span>
+    <div class="offer-h2">اطلبي الآن واحصلي على كل هذا</div>
+    <div class="offer-subh">⚡ تبقى <span id="offerStock">19</span> قطعة فقط بهذا السعر</div>
+
+    <div class="offer-item">
+      <div class="offer-icon">💆</div>
+      <div class="offer-info">
+        <span class="offer-name">ماسك الشعر بالكولاجين من كارسيل — 500 مل</span>
+        <span class="offer-desc">المنتج الأساسي — يكفي أكثر من 3 أشهر من الاستخدام المنتظم</span>
+      </div>
+      <span class="offer-val">السعر الأصلي</span>
+    </div>
+
+    <div class="offer-item">
+      <div class="offer-icon">🚚</div>
+      <div class="offer-info">
+        <span class="offer-name">شحن مجاني سريع</span>
+        <span class="offer-desc">توصيل لجميع إمارات الدولة خلال 24-48 ساعة</span>
+      </div>
+      <span class="offer-val">مجاناً ✓</span>
+    </div>
+
+    <div class="offer-item">
+      <div class="offer-icon">🛡️</div>
+      <div class="offer-info">
+        <span class="offer-name">تأمين شامل على الشحن</span>
+        <span class="offer-desc">منتجك مؤمن من المستودع حتى باب بيتكِ</span>
+      </div>
+      <span class="offer-val">مجاناً ✓</span>
+    </div>
+
+    <div class="offer-item">
+      <div class="offer-icon">↩️</div>
+      <div class="offer-info">
+        <span class="offer-name">ضمان 7 أيام كامل</span>
+        <span class="offer-desc">استرجاع أو استرداد كامل بلا شروط معقدة</span>
+      </div>
+      <span class="offer-val">لا يقدر بثمن</span>
+    </div>
+
+    <div class="offer-scarcity">
+      ⚠️ الكمية المتبقية محدودة — آخر <span id="offerStock2">19</span> قطعة بهذا السعر الخاص
+    </div>
+
+    <div class="offer-total">
+      <div>
+        <span class="offer-total-label">السعر النهائي</span>
+      </div>
+      <div style="text-align:left;">
+        <span class="offer-total-price">اضغطي للطلب ←</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a href="#" class="btn-cta" id="mainCta">
+      ✨ اطلبي الآن وامنحي شعرك الإنقاذ الحقيقي 🇦🇪
+    </a>
+    <span class="btn-sub">💳 الدفع عند الاستلام متاح &nbsp;|&nbsp; 🚚 شحن مجاني &nbsp;|&nbsp; ↩️ ضمان 7 أيام</span>
+  </div>
+
+  <!-- FAQ SECTION -->
+  <div class="section-title">
+    <h2>أسئلة شائعة — إجابات صريحة</h2>
+    <div class="divider"></div>
+    <p>كل ما تريدين معرفته قبل الطلب</p>
+  </div>
+
+  <div class="faq">
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>هل الماسك آمن للشعر المصبوغ أو المُعالَج كيميائياً؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          نعم — صُمّم ماسك كارسيل خصيصاً ليكون آمناً على الشعر المصبوغ والمُبيَّض والمُكيرتَن. التركيبة خالية من الكبريتات والبارابين ولا تحتوي على مواد تُزيل اللون. بالعكس، إغلاق الحراشف الناتج عن الكولاجين يُثبّت الصبغة ويُطيل عمرها.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>كم مرة أستخدم الماسك في الأسبوع؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          الاستخدام المثالي هو مرة إلى مرتين أسبوعياً — هذا يُتيح للمكونات العمل بشكل تراكمي دون إثقال الشعر. للشعر المتضرر جداً ابدئي بمرتين الشهر الأول ثم انتقلي لمرة واحدة للصيانة. الاستخدام اليومي غير ضروري وقد يُعطي إحساساً بالثقل.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>متى سأبدأ بملاحظة فرق حقيقي في شعري؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          معظم المستخدمات يلاحظن نعومة وسهولة في التمشيط من الاستخدام الأول. التحسن الملموس في الجفاف والتكسر يظهر عادةً خلال أسبوع إلى أسبوعين مع الاستخدام المنتظم. للشعر المتضرر جداً قد يستغرق 3-4 أسابيع لرؤية التحول الكامل.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>هل يناسب الشعر المختلط — دهني من الفروة وجاف من الأطراف؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          نعم — المهم تطبيقه من المنتصف إلى الأطراف وتجنب فروة الرأس. هذه القاعدة تُناسب الشعر المختلط تماماً وتُحلّ مشكلة الجفاف في الأطراف دون إثارة دهنية الفروة. إذا كانت فروة رأسك تعاني من التهاب أو قشرة شديدة، استشيري طبيبك قبل أي ماسك.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>ما الفرق بين هذا الماسك والكيراتين في الصالون؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          الكيراتين جلسة تُغلّف الشعر بطبقة خارجية تدوم 3-4 أشهر لكنها تحتاج صالوناً ومواد قد تكون قاسية وتكلفة عالية. ماسك كارسيل يُرمّم من الداخل بشكل تدريجي ومستدام — والنتيجة تتحسن مع كل استخدام. يمكن استخدامهما معاً، لكن كارسيل هو الصيانة الأسبوعية التي تجعل شعرك يبدو وكأنكِ في منتصف مدة جلسة كيراتين دائماً.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span>ماذا لو لم يناسبني المنتج؟</span>
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">
+          لا قلق على الإطلاق — نقدم ضمان 7 أيام كامل. إذا وصل المنتج تالفاً أو غير مطابق نعيد لكِ المبلغ كاملاً بدون أي تعقيدات. فريق خدمة العملاء في Vellmor متاح لمساعدتكِ في أي وقت.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="cta-wrap" style="padding-bottom:100px;">
+    <a href="#" class="btn-cta">
+      🛒 اطلبي الآن وابدئي رحلة شعرك ✨
+    </a>
+    <span class="btn-sub">💳 الدفع عند الاستلام &nbsp;|&nbsp; 🚚 توصيل مجاني &nbsp;|&nbsp; ↩️ ضمان 7 أيام &nbsp;|&nbsp; 🇦🇪 24-48 ساعة</span>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="foot">
+  <span class="foot-logo">VÉLLMOR</span>
+  <p>© 2026 VÉLLMOR. جميع الحقوق محفوظة.</p>
+  <p style="margin-top:6px;"><a href="https://vellmor.store" style="color:var(--olive-light);text-decoration:none;">ar.vellmor.store</a></p>
+</div>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-text">
+    🔥 تبقى <span id="stickyStock">19</span> قطعة فقط!
+    <small>🚚 شحن مجاني • 💳 دفع عند الاستلام</small>
+  </div>
+  <a href="#order" class="sticky-btn">اطلبي الآن</a>
+</div>
+
+<script>
+function toggleAccordion(btn) {
+  const body = btn.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  btn.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
+
+function toggleFaq(btn) {
+  const body = btn.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  btn.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
+
+const stickyBar = document.getElementById('stickyBar');
+window.addEventListener('scroll', () => {
+  stickyBar.classList.toggle('visible', window.scrollY > 400);
+});
+
+// Countdown Timer
+(function() {
+  const endTime = Date.now() + (3 * 3600 + 47 * 60 + 33) * 1000;
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    const diff = Math.max(0, endTime - Date.now());
+    const h = Math.floor(diff / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cdH').textContent = pad(h);
+    document.getElementById('cdM').textContent = pad(m);
+    document.getElementById('cdS').textContent = pad(s);
+    if (diff > 0) setTimeout(tick, 1000);
+  }
+  tick();
+})();
+
+// Stock counter — slowly decreasing for FOMO
+(function() {
+  let stock = 19;
+  const els = [
+    document.getElementById('stockCount'),
+    document.getElementById('offerStock'),
+    document.getElementById('offerStock2'),
+    document.getElementById('stickyStock')
+  ];
+  function updateStock(val) {
+    els.forEach(el => { if (el) el.textContent = val; });
+  }
+  function scheduleDecrease() {
+    if (stock <= 3) return;
+    const delay = (Math.random() * 6 + 4) * 60 * 1000;
+    setTimeout(() => {
+      stock--;
+      updateStock(stock);
+      scheduleDecrease();
+    }, delay);
+  }
+  scheduleDecrease();
+})();
+</script>
+
+</body>
+</html>
